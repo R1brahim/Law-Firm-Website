@@ -46,6 +46,7 @@ body {
     background: var(--color-bg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 
@@ -76,6 +77,7 @@ ul {
 .section {
     padding: 100px 0;
 }
+
 
 .section-title {
     font-family: var(--font-heading);
@@ -574,7 +576,7 @@ ul {
 }
 
 .accordion-item.open .accordion-body {
-    max-height: 400px;
+    max-height: 2000px;
     padding: 0 28px 24px;
 }
 
@@ -583,8 +585,13 @@ ul {
     font-size: 1.05rem;
     color: var(--color-text-light);
     line-height: 1.9;
+    margin-bottom: 12px;
     padding-left: 46px;
     letter-spacing: 0.2px;
+}
+
+.accordion-body p:last-child {
+    margin-bottom: 0;
 }
 
 /* ═══════════════════════════════════════════════════════════ */
@@ -686,6 +693,8 @@ ul {
 /* ═══════════════════════════════════════════════════════════ */
 /*  CONTACT                                                   */
 /* ═══════════════════════════════════════════════════════════ */
+
+
 .contact {
     background: var(--color-primary);
     color: var(--color-white);
@@ -962,6 +971,9 @@ ul {
     letter-spacing: 2px;
     color: var(--color-primary);
     margin-bottom: 28px;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 .policy-content h2 {
@@ -971,6 +983,9 @@ ul {
     color: var(--color-primary);
     margin: 40px 0 16px;
     letter-spacing: 1px;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 .policy-content p {
@@ -1299,7 +1314,7 @@ ul {
     }
 
     .policy-content h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .policy-content h2 {
